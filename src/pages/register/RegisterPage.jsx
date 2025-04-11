@@ -73,7 +73,7 @@ const RegisterPage = () => {
     return (
         <div className="register container">
             <div className="register-modal">
-                <button className="close-btn">×</button>
+                <Link to={'/'} className="close-btn">×</Link>
 
                 <h1 className="title">Регистрация</h1>
                 <p className="subtitle">Создать аккаунт</p>
