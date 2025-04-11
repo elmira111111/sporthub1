@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+
 import './pinCode.css';
 
 const PinCode = () => {
