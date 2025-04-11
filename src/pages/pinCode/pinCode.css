@@ -1,0 +1,103 @@
+.pinCode{
+    background-image: url("https://s3-alpha-sig.figma.com/img/f4dd/2351/49eaf451a1b5b047d5848fccce00e42c?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Bpae0-vxHOSRFCyTMk4QBpO1Q~a5VH1rEXGfoIoCTXmcTSuMAUnRhOC3ttVXzljOiVv9puZGP5rA5NZZm9nmULzjuaRZy5OKi4Odj9PdZfcgijlMyTMw-DnjVH9NhM1ACauvFUxW5JFIpHiF-ka4XAc3dXXUoIpv2BqNyuFxcdR5cOSNyFmXMi0hlkDq6nxaPTJszgLBafxBNmWhtIPvBIhd9X~OEwoVYqpo-BW-enuQnoYkcg9z1nwFOfnpxdBxvGMtndj-phHW3gcdaPklAJMIVlocqbgjOAjovMTRr4yxokqGFzYKMpg63BKtrA--o35PuIpTLEU0RE0k6XctUA__");    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Белая модалка */
+.pinCode-modal {
+    background-color: #ffffff;
+    padding: 80px;
+    border-radius: 10px;
+    width: 429px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Заголовок */
+.pinCode-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+/* Подзаголовок */
+.pinCode-subtitle {
+    font-size: 20px;
+    max-width: 350px;
+    color: #666666;
+    margin-bottom: 33px;
+    text-align: left;
+}
+
+/* Поля ввода */
+.pinCode-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 47px;
+}
+
+.pinCode-input {
+    width: 89px;
+    height: 100px;
+    border-radius: 8px;
+    background: rgba(246, 246, 246, 1);
+    border: none;
+    font-size: 24px;
+    text-align: center;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pinCode-input:hover {
+    border-color: #888;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: text;
+}
+
+.pinCode-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Кнопки */
+.pinCode-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.pinCode-button {
+    flex: 1;
+    padding: 16px 0 23px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+/* Красная кнопка */
+.pinCode-button.confirm {
+    background-color: #f20000;
+    color: white;
+}
+
+.pinCode-button.confirm:hover {
+    background-color: #d10000;
+}
+
+/* Отмена */
+.pinCode-button.cancel {
+    background-color: #f20000;
+    color: white;
+}
+
+.pinCode-button.cancel:hover {
+    background-color: #d10000;
+}
