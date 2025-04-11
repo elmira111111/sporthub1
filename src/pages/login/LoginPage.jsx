@@ -11,7 +11,7 @@ const Login = () => {
     return (
         <div className="login">
             <div className="login-modal">
-                <button className="close-btn">×</button>
+                <Link to={'/'} className="close-btn">×</Link>
                 <h2 className="title">Авторизация</h2>
                 <p className="subtitle">Добро пожаловать!</p>
                 <p className="subtitle-small">Войдите в свой аккаунт!</p>

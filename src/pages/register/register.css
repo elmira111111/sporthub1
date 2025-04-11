@@ -28,6 +28,7 @@
     background: none;
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .title {
