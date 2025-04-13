@@ -10,6 +10,7 @@ const HomePage = () => {
             <Link to={'/imregister'}>importRegister</Link>
             <Link to={'/reklama'}>reklama</Link>
             <Link to={'/basketbol'}>Basketbol</Link>
+            <Link to={'/profile'}>Profile</Link>
         </div>
     );
 };
