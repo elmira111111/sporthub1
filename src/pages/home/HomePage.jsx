@@ -9,7 +9,7 @@ const HomePage = () => {
             <Link to={'/pincode'}>pinCode</Link>
             <Link to={'/imregister'}>importRegister</Link>
             <Link to={'/reklama'}>reklama</Link>
-            <Link to={'/basketbol'}>Basketbol</Link>
+            <Link to={'/basketbol'}>Basketboll</Link>
         </div>
     );
 };
