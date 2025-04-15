@@ -1,0 +1,39 @@
+.header {
+  font-family: 'Comfortaa', cursive;  font-family: 'Comfortaa', cursive;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 34px 0 0 0;
+    font-size: 20px;
+  
+  
+    a {
+      line-height: 100%;
+      font-weight: 200;
+      
+      font-family: 'Comfortaa', cursive;      color: #ffffff;
+      border-bottom: none;
+      text-decoration: none; 
+    }
+    .registration {
+      text-align: center;
+      padding-top: 5px;
+      font-size: 20px;
+        width: 189px;
+        height: 40px;
+        background:none;
+        border: 1px solid #FFFCFC;
+        border-radius: 8px;
+    }
+    .translation {
+      /* width: 124px;
+      height: 40px;
+      background: none ;
+      border: 1px solid #FFFCFC;
+      
+      
+      border-radius: 8px; */
+    }
+  }
+  

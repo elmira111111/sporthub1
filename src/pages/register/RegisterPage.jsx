@@ -66,7 +66,6 @@ const RegisterPage = () => {
         e.preventDefault();
         if (validate()) {
             console.log('Данные формы:', formData);
-            // Здесь можно отправить данные на сервер
         }
     };
 

@@ -6,14 +6,13 @@ const PinCode = () => {
     const inputsRef = useRef([]);
 
     const handleChange = (e, index) => {
-        const value = e.target.value.replace(/\D/g, ''); // только цифры
+        const value = e.target.value.replace(/\D/g, ''); 
         if (!value) return;
 
         const newCode = [...code];
         newCode[index] = value;
         setCode(newCode);
 
-        // автофокус на следующий инпут
         if (index < 3) {
             inputsRef.current[index + 1].focus();
         }
