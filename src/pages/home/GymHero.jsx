@@ -1,13 +1,12 @@
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "./GymHero.css";
 import Sports from "../../sports/Sports";
-import Reklama from "../../reklama/Reklama";
-import { div } from "framer-motion/client";
-import '@fontsource/orelega-one'
+// import Reklama from "../../reklama/Reklama";
+// import { div } from "framer-motion/client";
+// import '@fontsource/orelega-one'
 const GymHero = () => {
   return (
     <div>

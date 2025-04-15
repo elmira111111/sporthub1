@@ -1,10 +1,9 @@
-import React from "react";
 import { useState } from "react";
 import Icon from "../../assets/images/entypo_controller-play.svg";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import Hub from "../../assets/images/Home.svg";
-import '@fontsource/comfortaa'; // по умолчанию 400
+// import '@fontsource/comfortaa'; 
  
 const Header = () => {
   const [lang, setLang] = useState("Рус");

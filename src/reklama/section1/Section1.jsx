@@ -1,4 +1,4 @@
-import react, { useState } from "react";
+import { useState } from "react";
 import "./Section1.css";
 import { SlidersHorizontal } from "lucide-react";
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import './reclamaCards.css';
 
 const ReclamaCards = () => {

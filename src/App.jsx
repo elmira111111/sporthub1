@@ -1,27 +1,28 @@
-import RegisterPage from '../src/pages/register/RegisterPage'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import HomePage from './pages/home/HomePage';
+import RegisterPage from './pages/register/RegisterPage';
 import LoginPage from './pages/login/LoginPage';
 import ForgotPass from "./pages/forgotPassword/ForgotPass.jsx";
 import PinCode from "./pages/pinCode/PinCode.jsx";
 import ImportReg from "./pages/importRegister/ImportReg.jsx";
 import Reklama from "./reklama/Reklama.jsx";
 import Basketbol from "./pages/BasketbollSection/Basketbol.jsx";
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import GymHero from './pages/home/GymHero.jsx';
 import Layout from './layout/Layout.jsx';
-import Sports from './sports/Sports.jsx';
-import ReclamaCards from './reklama/reklamaCards/ReclamaCards.jsx';
-import { Home } from 'lucide-react';
+// import Sports from './sports/Sports.jsx';
 
 
-const MainLayout = ({ children }) => (
-  <>
-    {children}
-    <HomePage/>
 
-    <Sports/>
-  </>
+// const MainLayout = ({ children }) => (
+//   <>
+//     {children}
+//     <Sports />
+//     <HomePage/>
 
-);
+//     <Sports/>
+//   </>
+
+// );
 
 function App() {
     return (

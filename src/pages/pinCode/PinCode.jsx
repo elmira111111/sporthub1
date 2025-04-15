@@ -1,6 +1,6 @@
 
 import './pinCode.css';
-
+import { useState,useRef } from 'react';
 const PinCode = () => {
     const [code, setCode] = useState(['', '', '', '']);
     const inputsRef = useRef([]);

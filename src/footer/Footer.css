@@ -1,0 +1,161 @@
+.footer {
+  background-image: url('../assets/images/footerBg.png'); 
+  background-size: cover;
+  background-position: center;
+  padding: 40px 84px;
+  color: white;
+  position: relative;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  
+}
+
+
+.footer2{
+max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+
+
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 24px;
+  font-weight: 600;
+  gap: 20px;
+}
+
+
+
+
+
+.footer-logo {
+  font-size: 28px;
+color: #CA0610;
+  
+font-weight: 800;
+font-size: 40px;
+line-height: 100%;
+letter-spacing: 0%;
+margin-left: 46px;
+
+}
+
+.footer-ads {
+color: #FFFFFFE5;
+font-weight: 600;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+background-color: #FE0404;
+width: 275px;
+text-align: center;
+padding: 10px;
+border-radius: 10px;
+ max-width: 100%;
+  width: 275px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+
+}
+
+
+
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  padding: 20px 20px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer-socials {
+
+  
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 20px;
+}
+
+.footer-socials a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer-line {
+  border: none;
+  height: 3px;
+  
+  margin: 20px 0;
+  width: 100%;
+}
+
+.footer-thanks {
+  text-align: center;
+  font-size: 18px;
+  font-family: Outfit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0%;
+  text-align: center;
+
+
+
+  
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 16px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-logo {
+    margin-left: 0;
+    font-size: 32px;
+  }
+
+  .footer-ads {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .footer-links {
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .footer-links a {
+    font-size: 16px;
+  }
+}

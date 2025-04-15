@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './imregister.css';
 import {Link, useNavigate} from 'react-router-dom';
 
