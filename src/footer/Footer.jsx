@@ -3,7 +3,8 @@ import './Footer.css'
 const Footer = () => {
   return (
     <footer className='footer'>
-      <div className="footer-overlay">
+      <div className='footer2'>
+        <div className="footer-overlay">
         <div className="footer-top">
           <div className="footer-logo">Logo</div>
           <div className="footer-ads">Разместить рекламу</div>
@@ -26,6 +27,7 @@ const Footer = () => {
         <p className="footer-thanks">Спасибо что выбираете нас!</p>
       </div>
       
+      </div>
       
     </footer>
   )

@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Footer from './footer/Footer.jsx';
 import HomePage from './pages/home/HomePage';
@@ -12,11 +11,14 @@ import Basketbol from "./pages/BasketbollSection/Basketbol.jsx";
 import Sports from './sports/Sports.jsx'; 
 
 
+
 const MainLayout = ({ children }) => (
   <>
     {children}
     <Sports />
-    <Footer />
+        <Footer />
+        
+       
   </>
 );
 
