@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './register.css';
 import PhoneInput from 'react-phone-number-input';
@@ -66,7 +66,6 @@ const RegisterPage = () => {
         e.preventDefault();
         if (validate()) {
             console.log('Данные формы:', formData);
-            // Здесь можно отправить данные на сервер
         }
     };
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import {Link} from "react-router-dom";
 
 const HomePage = () => {
@@ -9,7 +8,7 @@ const HomePage = () => {
             <Link to={'/pincode'}>pinCode</Link>
             <Link to={'/imregister'}>importRegister</Link>
             <Link to={'/reklama'}>reklama</Link>
-            <Link to={'/basketbol'}>Basketbol</Link>
+            <Link to={'/basketbol'}>Football</Link>
         </div>
     );
 };
