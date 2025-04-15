@@ -1,0 +1,139 @@
+.gym-hero {
+    margin-top: 30px;
+    width: 100%;
+    height: 100vh;
+    background-color:#18171A;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .gym-swiper {
+    height: 100%;
+  }
+  
+  .slide-content {
+    width: 1200px;
+    margin: auto;
+    position: relative;      
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    /* padding: 40px 80px; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .background-slide {
+    width: 100%;
+    background-image: url('../../assets/images/Hero.svg');
+    background-position: center;
+    height: 100vh;   
+  }
+  
+  .overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3); 
+    z-index: 1;
+  }
+  
+  .text-side {
+    font-family: 'Orelega One', cursive;
+    color: #D1D1D1B2 ;
+    width: 1200px;
+    margin: auto;
+    z-index: 2;
+  }
+  
+  .phone {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .credit-btn {
+    background-color: #e50000;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    cursor: pointer;
+  }
+  
+  .features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+  }
+  
+  .features li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 24px;
+  }
+  
+  .features li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+  }
+  
+  .location {
+    margin-bottom: 16px;
+  }
+  
+  .instagram{
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid #858585;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    
+    
+  }
+  .watch-btn {
+    position: absolute;
+    bottom: 140px;
+    right: 140px;
+    background-color: #e50000;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 1;
+    
+
+  }
+  .swiper-button-next { 
+    z-index: 1;
+  }  
+  .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #E41C26B2;
+    color: white;
+  } 
+  .swiper-button-next { 
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #E41C26B2;
+    color: white;
+  }
