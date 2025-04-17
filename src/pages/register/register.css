@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -15,7 +14,7 @@
     background: white;
     border-radius: 16px;
     padding: 40px;
-    width: 420px;
+    width: 620px;
     box-shadow: 0 10px 40px rgba(0,0,0,0.2);
     position: relative;
 }
@@ -24,8 +23,9 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    font-size: 24px;
+    font-size: 30px;
     background: none;
+    color: #18171A;
     border: none;
     cursor: pointer;
     text-decoration: none;
@@ -34,7 +34,7 @@
 .title {
     text-align: center;
     font-size: 48px;
-    font-weight: 700;
+    font-weight: 400;
     margin-bottom: 10px;
 }
 
@@ -165,5 +165,82 @@
     font-size: 12px;
     margin-top: 4px;
     display: block;
+}
+
+
+@media (max-width: 768px) {
+    .register {
+        padding: 20px;
+        align-items: flex-start;
+    }
+
+    .register-modal {
+        width: 100%;
+        max-width: 360px;
+        padding: 25px 20px;
+        border-radius: 12px;
+    }
+
+    .close-btn {
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-input,
+    .first-name-input,
+    .last-name-input {
+        width: 100%;
+    }
+
+    .remember-text {
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .login-link {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .register-modal {
+        max-width: 95%;
+        padding: 20px 16px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+    .remember-text {
+        font-size: 13px;
+    }
+
+    .submit-btn {
+        font-size: 13px;
+    }
 }
 
