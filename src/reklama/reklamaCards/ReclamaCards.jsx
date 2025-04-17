@@ -1,4 +1,7 @@
 import './reclamaCards.css';
+import local from '../../assets/images/localIcon.svg'
+import instagram from '../../assets/images/instagram.svg'
+import phoneIcon from '../../assets/images/phone.svg'
 
 const ReclamaCards = () => {
     const cards = [
@@ -54,12 +57,14 @@ const ReclamaCards = () => {
                 <div
                     key={card.id}
                     className="reclama-banner"
-                    style={{ backgroundImage: `url(${card.image})` }}
+                    style={{backgroundImage: `url(${card.image})`}}
                 >
-                    <div className="reclama-phone">{card.phone}</div>
+                    <div className="reclama-phone">
+                        <img src={phoneIcon} alt=""/>
+                        {card.phone}</div>
 
                     <h1 className="reclama-title">
-                        <span>{card.titleTop}</span><br />
+                        <span>{card.titleTop}</span><br/>
                         {card.titleBottom}
                     </h1>
 
@@ -72,11 +77,14 @@ const ReclamaCards = () => {
                     </ul>
 
                     <div className="reclama-address">
+                        <img src={local} alt=""/>
                         <p>{card.address}</p>
+                    </div>
+                    <div className="reclama-address">
+                        <img src={instagram} alt=""/>
                         <p>{card.social}</p>
                     </div>
-
-                    <div className="reclama-line" />
+                    <div className="reclama-line"/>
                 </div>
             ))}
         </div>

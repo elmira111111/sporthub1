@@ -7,6 +7,15 @@
     margin: 0 auto;
     background-color: black;
     color: white;
+    overflow: hidden;
+}
+
+.vsereclamy{
+    /*padding: 50px;*/
+    font-size: 50px;
+    color: white;
+    background: #1976d2;
+    position: absolute;
 }
 
 .background-image {
@@ -119,6 +128,53 @@
     cursor: pointer;
 }
 
-/*.close-button:hover {*/
-/*    background: darkred;*/
-/*}*/
+
+@media (max-width: 768px) {
+    .section1-container {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .background-image
+    {
+        width: 425px;
+        transform: translateX(-50%); /* Центрируем изображение по горизонтали */
+        align-self: center;
+        margin: auto;
+    }
+
+    .overlay-image,
+    .overlay-image2{
+        display: none;
+    }
+
+    .section1-labels {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 20px;
+        padding: 20px 0;
+    }
+
+    .label {
+        padding: 8px;
+    }
+
+    .settings-button {
+        top: 10px;
+        right: 10px;
+    }
+
+    .modal-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .modal-content p {
+        font-size: 14px;
+    }
+
+    .close-button {
+        font-size: 30px;
+    }
+}
+
