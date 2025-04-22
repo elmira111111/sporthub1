@@ -11,10 +11,10 @@ const Login = () => {
     return (
         <div className="login">
             <div className="login-modal">
-                <Link to={'/'} className="close-btn">×</Link>
+                <Link to={'/'} className="close-btn-login">×</Link>
                 <h2 className="title">Авторизация</h2>
                 <p className="subtitle">Добро пожаловать!</p>
-                <p className="subtitle-small">Войдите в свой аккаунт!</p>
+                <p className="subtitle-small-login">Войдите в свой аккаунт!</p>
 
                 <form className="form">
                     <input
@@ -62,8 +62,8 @@ const Login = () => {
                     </button>
                 </form>
 
-                <div className="login-link">
-                    Если вы не зарегистрированы, нажмите{' '}
+                <div className="login-link2">
+                    Если вы не зарегистрированы нажмите{' '}
                     <Link to="/register">Регистрация</Link>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 
 import './pinCode.css';
 import { useState,useRef } from 'react';
+import {Link} from "react-router-dom";
 const PinCode = () => {
     const [code, setCode] = useState(['', '', '', '']);
     const inputsRef = useRef([]);
@@ -31,13 +32,13 @@ const PinCode = () => {
     };
 
     return (
-        <div className="pinCode container">
+        <div className="pinCode-container">
             <div className="pinCode-modal">
                 <h3 className="pinCode-title">Введите 4-значный код</h3>
+                <Link to={'/'} className="close-btnPinCode">×</Link>
                 <p className="pinCode-subtitle">
                     На адрес электронной почты, который вы указали, должен был прийти четырёхзначный код.
                 </p>
-
                 <div className="pinCode-inputs">
                     {[...Array(4)].map((_, i) => (
                         <input
