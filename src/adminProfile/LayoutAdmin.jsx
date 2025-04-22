@@ -3,10 +3,14 @@ import AdminHeader from "./adminHeader/AdminHeader.jsx";
 import Aside from "./adminLeft/Aside.jsx";
 const LayoutAdmin = () => {
     return (
-        <div>
-            <AdminHeader />
-            <Outlet/>
+        <div style={{display: "flex"}}>
             <Aside/>
+            <div>
+                <AdminHeader />
+                <div>
+                    <Outlet/>
+                </div>
+            </div>
         </div>
     )
 }
