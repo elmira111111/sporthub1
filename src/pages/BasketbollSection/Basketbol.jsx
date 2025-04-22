@@ -1,6 +1,7 @@
-import React, { useState } from 'react'; // Импортируем useState
+import { useState } from 'react'; // Импортируем 
 import './Basketbol.css'; // Подключаем CSS файл
 
+// eslint-disable-next-line react/prop-types
 const CategoryCard = ({ image, title, background }) => {
     const [isClicked, setIsClicked] = useState(false);
 

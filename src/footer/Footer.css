@@ -2,20 +2,43 @@
   background-image: url('../assets/images/footerBg.png'); 
   background-size: cover;
   background-position: center;
-  padding: 40px 24px;
+  padding: 40px 84px;
   color: white;
   position: relative;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  
 }
+
+
+.footer2{
+ 
+max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+
+}
+
+
 
 
 .footer-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   font-size: 24px;
   font-weight: 600;
-  margin-bottom: 20px;
+  gap: 20px;
 }
+
+
+
+
 
 .footer-logo {
   font-size: 28px;
@@ -40,19 +63,25 @@ width: 275px;
 text-align: center;
 padding: 10px;
 border-radius: 10px;
+ max-width: 100%;
+  width: 275px;
+  box-sizing: border-box;
+  word-wrap: break-word;
 
 }
+
+
+
 
 .footer-links {
   display: flex;
   justify-content: center;
   gap: 70px;
-  margin-bottom: 20px;
-
-font-weight: 600;
-font-size: 20px;
-line-height: 100%;
-letter-spacing: 0%;
+  padding: 20px 20px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
 
 
 }
@@ -64,10 +93,12 @@ letter-spacing: 0%;
 }
 
 .footer-socials {
+
+  
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-bottom: 20px;
+  padding: 20px 20px;
 }
 
 .footer-socials a {
@@ -78,10 +109,12 @@ letter-spacing: 0%;
 
 .footer-line {
   border: none;
-  height: 1px;
-  background-color: rgb(183, 16, 16);
+  height: 3px;
+  
   margin: 20px 0;
   width: 100%;
+  color: rgba(255, 255, 255, 1);
+  
 }
 
 .footer-thanks {
@@ -97,4 +130,37 @@ letter-spacing: 0%;
 
 
   
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 16px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-logo {
+    margin-left: 0;
+    font-size: 32px;
+  }
+
+  .footer-ads {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .footer-links {
+    gap: 20px;
+    padding: 10px;
+  
+  }
+
+  .footer-links a {
+    font-size: 16px;
+  }
 }
