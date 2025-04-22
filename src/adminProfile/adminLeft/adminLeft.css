@@ -1,0 +1,131 @@
+.app-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.sidebar {
+    width: 260px;
+    background-image: url("https://s3-alpha-sig.figma.com/img/1666/a1fe/80379304a20d2963b1918aec7a262736?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Bcna5Es~FKT3eKS0CurRJYa2zbeMrT-yOmgvmemCF9hNkndfyXhZFkrfHsJ~ZKrNpeFTnXb7dhCP5bQXKN1cd0AClL-Ho6deSGPf8b6Vzlxg5Mzmoz4n9lT1rEhGHz3y3WTD4WZMRMye20HZLh5lyZ6ob6~Xy6oRGolkQFzQ5q-1wy7RSwUiioiCLQESz3lLd9NA0nXElcx5ZNpx~fYo5baEcHBbKT-wiQfsWWliajv2oejRoQhGBvnbIsN2e2GE4a3ZousRp580Wr1huHJhMEXaLBh2aNqt15wj~6LhARqpE~tdAz7uAy26v8e8yaOOzLP6X0OVoumaTo1uDJKRsg__");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 24px;
+}
+
+.menu {
+    flex-grow: 1;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 18px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-item .menu-icon {
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.menu-item.active {
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+
+.menu-item.active .menu-icon {
+    filter: brightness(0);
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    color: #ff4b4b;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 60px 15px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 1024px) {
+    .app-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        overflow-x: auto;
+    }
+
+    .menu ul {
+        display: flex;
+        gap: 16px;
+    }
+
+    .menu-item {
+        white-space: nowrap;
+        margin-bottom: 0;
+    }
+
+    .logout-button {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .menu-item {
+        width: 100%;
+    }
+
+    .logout-button {
+        padding: 40px 0 0;
+        width: 100%;
+        justify-content: flex-start;
+    }
+}

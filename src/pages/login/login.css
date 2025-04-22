@@ -1,5 +1,5 @@
 .login {
-    background-image: url("https://s3-alpha-sig.figma.com/img/f4dd/2351/49eaf451a1b5b047d5848fccce00e42c?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Bpae0-vxHOSRFCyTMk4QBpO1Q~a5VH1rEXGfoIoCTXmcTSuMAUnRhOC3ttVXzljOiVv9puZGP5rA5NZZm9nmULzjuaRZy5OKi4Odj9PdZfcgijlMyTMw-DnjVH9NhM1ACauvFUxW5JFIpHiF-ka4XAc3dXXUoIpv2BqNyuFxcdR5cOSNyFmXMi0hlkDq6nxaPTJszgLBafxBNmWhtIPvBIhd9X~OEwoVYqpo-BW-enuQnoYkcg9z1nwFOfnpxdBxvGMtndj-phHW3gcdaPklAJMIVlocqbgjOAjovMTRr4yxokqGFzYKMpg63BKtrA--o35PuIpTLEU0RE0k6XctUA__");    background-size: cover;
+    background-image: url("https://s3-alpha-sig.figma.com/img/f4dd/2351/49eaf451a1b5b047d5848fccce00e42c?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ioOTfL5UNfnwntjxK11VB9wQWVfWf4dh6rzDbhvEv6vZQBJlSkJI26h9mVgg4P5FRfYZSmR8Mzwq~GBaL1Yg13zfdVK0Dg0GDwHdhkv2L4ZiDVmetAixcgnxO6-AQZi6CcDDEMIN7q7X2ZA4Rt7MvRw2OlbZr4pxwMuvHG2kxnkckoirVjGN3PxldxiVCLP~ygY52jQS~RvGkdKqd6jwHoONoiTmVorHgyKvHIxZ3uOP04I8rWXu2XT17Wa3ZViOnk1u~J3IB4E-IHno2KG7Dd1bUhS06Ogo9qb9hp-E1dAihGemmJd2Bo8GTmQG9-I1bStpcoP~pGJ2ZBumErPKFA__");    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
@@ -10,39 +10,46 @@
 
 .login-modal {
     background: white;
-    border-radius: 16px;
-    padding: 40px;
-    width: 420px;
+    border-radius: 8px;
+    padding: 60px 30px;
+    width: 620px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
     position: relative;
 }
 
-.close-btn {
+.close-btn-login {
     position: absolute;
-    top: 20px;
     right: 20px;
-    font-size: 24px;
+    top: -5px;
+    font-size: 45px;
+    font-weight: 200;
     background: none;
+    color: #18171A;
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.title {
+.login-modal .title {
     text-align: center;
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 10px;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: none;
 }
 
 .subtitle {
-    text-align: center;
-    font-size: 16px;
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.subtitle-small {
-    text-align: center;
-    font-size: 14px;
-    margin-bottom: 20px;
+.subtitle-small-login {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 38px;
+    color: rgba(134, 136, 137, 1);
 }
 
 .form {
@@ -63,6 +70,7 @@
     justify-content: space-between;
     align-items: center;
     font-size: 14px;
+    margin-bottom: 10px;
 }
 
 .remember-toggle {
@@ -112,7 +120,6 @@
     border-radius: 50%;
 }
 
-/* Когда активен — красный фон */
 .switch input:checked + .slider {
     background-color: #ff2d2d;
 }
@@ -131,7 +138,7 @@
     background-color: #ff2d2d;
     color: white;
     border: none;
-    padding: 12px;
+    padding: 15px;
     border-radius: 10px;
     font-weight: bold;
     cursor: pointer;
@@ -143,22 +150,180 @@
     background-color: #d92626;
 }
 
-.submit-btn:disabled {
-    background-color: #aaa;
-    cursor: not-allowed;
-}
-
-.login-link {
-    text-align: center;
-    margin-top: 12px;
+.login-link2 {
+    text-align: left;
+    margin-top: 18px;
     font-size: 18px;
+    color: rgba(134, 136, 137, 1);
+    font-weight: 400;
 }
 
-.login-link a {
+.login-link{
     color: #1976d2;
     text-decoration: none;
+    font-size: 20px;
+    margin-top: 13px;
+}
+
+.login-link2 a {
+    color: #1976d2;
+    text-decoration: none;
+    font-size: 18px;
 }
 
 .login-link a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    .login {
+        background-size: cover;
+        background-position: top;
+        min-height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .login-modal {
+        padding: 40px 20px;
+        width: 100%;
+        max-width: 343px;
+        height: 605px;
+        margin: auto;
+    }
+
+    .close-btn-login {
+        font-size: 32px; /* Уменьшаем размер кнопки */
+        right: 15px; /* Ближе к краю */
+        top: -3px;
+    }
+
+    .login-modal .title {
+        font-size: 24px; /* Уменьшаем размер заголовка */
+        margin-bottom: 40px;
+        font-weight: 700;
+    }
+
+    .subtitle {
+        display: none;
+    }
+
+    .subtitle-small-login {
+        font-size: 12px; /* Уменьшаем размер текста */
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .form input {
+        padding: 8px; /* Уменьшаем отступы в полях */
+        margin-bottom: -30px;
+        font-size: 12px;
+        border-radius: 3px;
+        height: 30px;
+    }
+
+    .form{
+        display: flex;
+        gap: 3px;
+    }
+
+    .remember-toggle {
+        margin-top: 1px;
+        font-size: 10px;
+        margin-bottom: 30px;
+        .switch{
+            width: 40px;
+            height: 20px;
+        }
+        .remember-text {
+            font-size: 12px;
+        }
+    }
+
+    .submit-btn {
+        padding: 12px;
+        margin-top: 100px;
+    }
+
+    .login-link{
+        font-size: 14px;
+        color: #1976d2;
+        text-align: right;
+        margin-bottom: 18px;
+        text-decoration: none;
+    }
+
+    .login-link2{
+        font-size: 14px;
+        a{
+            font-size: 14px;
+        }
+    }
+
+}
+
+/*@media (max-width: 1024px) {*/
+/*    .login {*/
+/*        background-size: cover;*/
+/*        background-position: top;*/
+/*        min-height: 100vh;*/
+/*        display: flex;*/
+/*        justify-content: center;*/
+/*        align-items: center;*/
+/*    }*/
+
+/*    .login-modal {*/
+/*        padding: 50px 25px; !* Увеличиваем отступы *!*/
+/*        width: 80%; !* Увеличиваем ширину *!*/
+/*        max-width: 600px; !* Ограничиваем максимальную ширину *!*/
+/*    }*/
+
+/*    .close-btn {*/
+/*        font-size: 40px;*/
+/*        right: 15px;*/
+/*        top: -5px;*/
+/*    }*/
+
+/*    .login-modal .title {*/
+/*        font-size: 24px;*/
+/*    }*/
+
+/*    .subtitle {*/
+/*        font-size: 22px;*/
+/*    }*/
+
+/*    .subtitle-small {*/
+/*        font-size: 18px;*/
+/*        margin-bottom: 30px;*/
+/*    }*/
+
+/*    .form input {*/
+/*        padding: 10px;*/
+/*    }*/
+
+/*    .remember-row {*/
+/*        flex-direction: row;*/
+/*        justify-content: space-between;*/
+/*    }*/
+
+/*    .remember-toggle {*/
+/*        margin-top: 8px;*/
+/*    }*/
+
+/*    .submit-btn {*/
+/*        padding: 14px;*/
+/*    }*/
+
+/*    .login-link2 a{*/
+/*        font-size: 12px;*/
+/*        color: #1976d2;*/
+/*    }*/
+
+/*    .login-link2{*/
+/*        margin-top: 20px;*/
+/*        font-size: 12px;*/
+/*        color: rgba(134, 136, 137, 1);*/
+/*    }*/
+/*}*/
+

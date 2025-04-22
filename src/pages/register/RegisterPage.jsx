@@ -1,60 +1,40 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './register.css';
-import PhoneInput from 'react-phone-number-input';
-import 'react-phone-number-input/style.css';
 
 const RegisterPage = () => {
-    const [formData, setFormData] = useState({
-        email: '',
-        password: '',
-        confirmPassword: '',
-        firstName: '',
-        lastName: '',
-        phone: '',
-        birthDate: '',
-        remember: false,
-    });
-
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [phone, setPhone] = useState('');
+    const [birthDate, setBirthDate] = useState('');
+    const [remember, setRemember] = useState(false);
     const [errors, setErrors] = useState({});
-
-    const handleChange = (e) => {
-        const { name, value, type, checked } = e.target;
-        setFormData(prev => ({
-            ...prev,
-            [name]: type === 'checkbox' ? checked : value
-        }));
-    };
-
-    const handlePhoneChange = (value) => {
-        setFormData(prev => ({
-            ...prev,
-            phone: value
-        }));
-    };
 
     const validate = () => {
         const newErrors = {};
 
-        if (!formData.email.includes('@')) {
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
             newErrors.email = 'Введите корректный email';
         }
-        if (formData.password.length < 6) {
+        if (password.length < 6) {
             newErrors.password = 'Пароль должен быть не менее 6 символов';
         }
-        if (formData.confirmPassword !== formData.password) {
+        if (confirmPassword !== password) {
             newErrors.confirmPassword = 'Пароли не совпадают';
         }
-        if (!formData.firstName.trim()) {
+        if (!firstName.trim()) {
             newErrors.firstName = 'Имя обязательно';
         }
-        if (!formData.lastName.trim()) {
+        if (!lastName.trim()) {
             newErrors.lastName = 'Фамилия обязательна';
         }
-        if (!formData.phone) {
+        if (!phone.trim()) {
             newErrors.phone = 'Введите корректный номер телефона';
         }
-        if (!formData.birthDate) {
+        if (!birthDate) {
             newErrors.birthDate = 'Дата рождения обязательна';
         }
 
@@ -65,125 +45,114 @@ const RegisterPage = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validate()) {
-            console.log('Данные формы:', formData);
+            console.log('Регистрация прошла успешно!');
+            // Здесь можно отправить данные на сервер
         }
     };
 
     return (
-        <div className="register container">
-            <div className="register-modal">
-                <Link to={'/'} className="close-btn">×</Link>
+        <div className="register-container">
+                <div className="register-modal">
+                    <Link to="/" className="close-btn" aria-label="Закрыть">×</Link>
+                    <h1 className="title-register">Регистрация</h1>
+                    <p className="subtitle-register">Создать аккаунт</p>
 
-                <h1 className="title">Регистрация</h1>
-                <p className="subtitle">Создать аккаунт</p>
-
-                <form className="form" onSubmit={handleSubmit}>
-                    <div>
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="E-mail"
-                            value={formData.email}
-                            onChange={handleChange}
-                        />
-                        {errors.email && <span className="error-text">{errors.email}</span>}
-                    </div>
-
-                    <div>
-                        <input
-                            type="password"
-                            name="password"
-                            placeholder="Пароль"
-                            value={formData.password}
-                            onChange={handleChange}
-                        />
-                        {errors.password && <span className="error-text">{errors.password}</span>}
-                    </div>
-
-                    <div>
-                        <input
-                            type="password"
-                            name="confirmPassword"
-                            placeholder="Подтвердите пароль"
-                            value={formData.confirmPassword}
-                            onChange={handleChange}
-                        />
-                        {errors.confirmPassword && <span className="error-text">{errors.confirmPassword}</span>}
-                    </div>
-
-                    <div className="form-row">
-                        <div className="form-input">
-                            <input
-                                type="text"
-                                name="firstName"
-                                placeholder="Имя *"
-                                value={formData.firstName}
-                                onChange={handleChange}
-                                className={"first-name-input"}
-                            />
-                            {errors.firstName && <span className="error-text">{errors.firstName}</span>}
-                        </div>
-
-                        <div className="form-input">
-                            <input
-                                type="text"
-                                name="lastName"
-                                placeholder="Фамилия *"
-                                value={formData.lastName}
-                                onChange={handleChange}
-                                className={"last-name-input"}
-                            />
-                            {errors.lastName && <span className="error-text">{errors.lastName}</span>}
-                        </div>
-                    </div>
-
-
-                    <div className="form-row">
+                    <form className="form" onSubmit={handleSubmit}>
                         <div>
-                            <PhoneInput
-                                international
-                                defaultCountry="KG"
-                                value={formData.phone}
-                                onChange={handlePhoneChange}
-                                placeholder="Номер телефона *"
+                            <input
+                                type="email"
+                                placeholder="E-mail"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
                             />
-                            {errors.phone && <span className="error-text">{errors.phone}</span>}
+                            {errors.email && <span className="error-text">{errors.email}</span>}
                         </div>
 
                         <div>
                             <input
-                                type="date"
-                                name="birthDate"
-                                placeholder="Дата рождения *"
-                                value={formData.birthDate}
-                                onChange={handleChange}
+                                type="password"
+                                placeholder="Пароль"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
                             />
-                            {errors.birthDate && <span className={"error-text"}>{errors.birthDate}</span>}
+                            {errors.password && <span className="error-text">{errors.password}</span>}
                         </div>
-                    </div>
 
-                    <div className="remember-row">
-                        <div className="remember-toggle">
+                        <div>
+                            <input
+                                type="password"
+                                placeholder="Подтвердите пароль"
+                                value={confirmPassword}
+                                onChange={(e) => setConfirmPassword(e.target.value)}
+                            />
+                            {errors.confirmPassword && <span className="error-text">{errors.confirmPassword}</span>}
+                        </div>
+
+                        <div className="form-register">
+                            <div className="form-input">
+                                <label className={'label-register'}>Имя <span style={{color: 'red'}}>*</span></label>
+                                <input
+                                    type="text"
+                                    value={firstName}
+                                    onChange={(e) => setFirstName(e.target.value)}
+                                />
+                                {errors.firstName && <span className="error-text">{errors.firstName}</span>}
+                            </div>
+
+                            <div className="form-input">
+                                <label className={'label-register'}>Фамилия<span style={{color: 'red',marginLeft: '5px'}}>*</span></label>
+                                <input
+                                    type="text"
+                                    value={lastName}
+                                    onChange={(e) => setLastName(e.target.value)}
+                                />
+                                {errors.lastName && <span className="error-text">{errors.lastName}</span>}
+                            </div>
+                        </div>
+
+                        <div className="form-register">
+                            <div className="form-input">
+                                <label className={'label-register'}>Телефон<span style={{color: 'red',marginLeft: '5px'}}>*</span></label>
+                                <input
+                                    type="tel"
+                                    placeholder="+996"
+                                    value={phone}
+                                    onChange={(e) => setPhone(e.target.value)}
+                                />
+                                {errors.phone && <span className="error-text">{errors.phone}</span>}
+                            </div>
+
+                            <div className="form-input">
+                                <label className={'label-register'}>Дата рождения<span
+                                    style={{color: 'red',marginLeft: '5px'}}>*</span></label>
+                                <input
+                                    type="date"
+                                    value={birthDate}
+                                    onChange={(e) => setBirthDate(e.target.value)}
+                                />
+                                {errors.birthDate && <span className="error-text">{errors.birthDate}</span>}
+                            </div>
+                        </div>
+
+                        <div className="remember-register">
                             <label className="switch">
                                 <input
                                     type="checkbox"
-                                    name="remember"
-                                    checked={formData.remember}
-                                    onChange={handleChange}
+                                    checked={remember}
+                                    onChange={(e) => setRemember(e.target.checked)}
                                 />
                                 <span className="slider"/>
                             </label>
                             <span className="remember-text">Запомнить</span>
                         </div>
-                    </div>
 
-                    <button type="submit" className="submit-btn">Зарегистрироваться</button>
+                        <button type="submit" className="submit-btn-register">Зарегистрироваться</button>
 
-                    <p className="login-link">
-                        Уже есть аккаунт? <Link to="/login">Авторизация</Link>
-                    </p>
-                </form>
-            </div>
+                        <p className="register-link">
+                            Уже есть аккаунт? <Link to="/login">Авторизация</Link>
+                        </p>
+                    </form>
+                </div>
         </div>
     );
 };

@@ -1,29 +1,34 @@
-.register {
-    background-image: url("https://s3-alpha-sig.figma.com/img/f4dd/2351/49eaf451a1b5b047d5848fccce00e42c?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Bpae0-vxHOSRFCyTMk4QBpO1Q~a5VH1rEXGfoIoCTXmcTSuMAUnRhOC3ttVXzljOiVv9puZGP5rA5NZZm9nmULzjuaRZy5OKi4Odj9PdZfcgijlMyTMw-DnjVH9NhM1ACauvFUxW5JFIpHiF-ka4XAc3dXXUoIpv2BqNyuFxcdR5cOSNyFmXMi0hlkDq6nxaPTJszgLBafxBNmWhtIPvBIhd9X~OEwoVYqpo-BW-enuQnoYkcg9z1nwFOfnpxdBxvGMtndj-phHW3gcdaPklAJMIVlocqbgjOAjovMTRr4yxokqGFzYKMpg63BKtrA--o35PuIpTLEU0RE0k6XctUA__");
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.register-container {
+    background-image: url("https://s3-alpha-sig.figma.com/img/f4dd/2351/49eaf451a1b5b047d5848fccce00e42c?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ioOTfL5UNfnwntjxK11VB9wQWVfWf4dh6rzDbhvEv6vZQBJlSkJI26h9mVgg4P5FRfYZSmR8Mzwq~GBaL1Yg13zfdVK0Dg0GDwHdhkv2L4ZiDVmetAixcgnxO6-AQZi6CcDDEMIN7q7X2ZA4Rt7MvRw2OlbZr4pxwMuvHG2kxnkckoirVjGN3PxldxiVCLP~ygY52jQS~RvGkdKqd6jwHoONoiTmVorHgyKvHIxZ3uOP04I8rWXu2XT17Wa3ZViOnk1u~J3IB4E-IHno2KG7Dd1bUhS06Ogo9qb9hp-E1dAihGemmJd2Bo8GTmQG9-I1bStpcoP~pGJ2ZBumErPKFA__");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+   width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: fixed;
 }
-
 
 .register-modal {
     background: white;
-    border-radius: 16px;
+    border-radius: 6px;
     padding: 40px;
-    width: 620px;
+    width: 636px;
+    height: 788px;
     box-shadow: 0 10px 40px rgba(0,0,0,0.2);
     position: relative;
+    margin: auto;
 }
 
-.close-btn {
+ .register-modal .close-btn {
     position: absolute;
-    top: 20px;
     right: 20px;
-    font-size: 30px;
+     top: -5px;
+    font-size: 45px;
+    font-weight: 200;
     background: none;
     color: #18171A;
     border: none;
@@ -31,53 +36,87 @@
     text-decoration: none;
 }
 
-.title {
+ .register-modal .title-register {
     text-align: center;
     font-size: 48px;
-    font-weight: 400;
     margin-bottom: 10px;
-}
+    font-weight: 700 !important;
+    font-family: 'Lato', sans-serif ;
+     line-height: 100%;
+     letter-spacing: 1px;
+     text-transform: none;
+ }
 
-.subtitle {
-    text-align: center;
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-.form-row {
+ .register-modal .subtitle-register {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+     font-weight: 600;
+     font-family: 'Lato', sans-serif ;
+ }
+
+.form-register {
     display: flex;
-    justify-content: space-between;
-    /*gap: 5px; !* Расстояние между полями *!*/
+    gap: 17px;
 }
 
 .form-input {
-    flex: 1; /* Чтобы поля занимали доступное пространство */
+    flex: 1;
 }
 
-/* Увеличиваем ширину поля для имени */
-.first-name-input {
-    /*width: 70%;  !* Это значение можно настроить по вашему желанию *!*/
-}
-
-.last-name-input {
-    width: 70%;  /* Это значение можно настроить по вашему желанию */
-}
-
-.form input[type="text"],
+/*.form input[type="text"],*/
 .form input[type="email"],
-.form input[type="password"],
-.form input[type="tel"],
-.form input[type="date"] {
-    width: 100%;  /* Ширина поля по умолчанию */
+.form input[type="password"]
+ {
+    width: 556px;
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #ccc;
     margin-bottom: 10px;
 }
 
-.remember-row {
+.phone-input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.phone-label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #1A1A1A; /* чёрный, как на скрине */
+    margin-bottom: 4px;
+    display: inline-block;
+    margin-left: 3px;
+}
+
+.date-label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #1A1A1A;
+    margin-bottom: 4px;
+    display: inline-block;
+    /*margin-left: 13px;*/
+}
+
+.label-register {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+
+.phone-input::placeholder {
+    color: #aaa;
+}
+
+.remember-register {
     display: flex;
-    align-items: center;
     gap: 10px;
+    align-items: center;
+
 }
 
 .remember-toggle {
@@ -87,12 +126,12 @@
     margin-top: 8px;
 }
 
-/* Стиль переключателя */
 .switch {
     position: relative;
     display: inline-block;
     width: 40px;
     height: 20px;
+    margin-top: 2px;
 }
 
 .switch input {
@@ -101,7 +140,6 @@
     height: 0;
 }
 
-/* Серый фон ползунка */
 .slider {
     position: absolute;
     cursor: pointer;
@@ -114,7 +152,6 @@
     border-radius: 20px;
 }
 
-/* Кружок внутри */
 .slider::before {
     position: absolute;
     content: "";
@@ -127,12 +164,10 @@
     border-radius: 50%;
 }
 
-/* Когда активен — красный фон */
 .switch input:checked + .slider {
     background-color: #ff2d2d;
 }
 
-/* Когда активен — двигается кружок */
 .switch input:checked + .slider::before {
     transform: translateX(20px);
 }
@@ -142,8 +177,7 @@
     color: rgba(134, 136, 137, 1);
 }
 
-
-.submit-btn {
+.submit-btn-register {
     background-color: #ff2d2d;
     color: white;
     border: none;
@@ -154,10 +188,16 @@
     margin-top: 10px;
 }
 
-.login-link {
+.register-link {
     text-align: center;
     margin-top: 12px;
-    font-size: 14px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.register-link a{
+    text-decoration: none;
 }
 
 .error-text {
@@ -167,80 +207,148 @@
     display: block;
 }
 
+/* Обёртка */
+.custom-phone-input {
+    position: relative;
+    margin-bottom: 10px;
+}
+
 
 @media (max-width: 768px) {
     .register {
         padding: 20px;
+        flex-direction: column;
         align-items: flex-start;
+        width: 375px;
     }
 
     .register-modal {
         width: 100%;
-        max-width: 360px;
+        max-width: 343px;
+        max-height: 605px;
         padding: 25px 20px;
         border-radius: 12px;
     }
 
-    .close-btn {
-        top: 10px;
-        right: 10px;
-        font-size: 20px;
+    .register-modal .close-btn {
+        top: 1px;
+        right: 14px;
+        font-size: 26px;
     }
 
-    .title {
-        font-size: 32px;
+    .register-modal .title-register {
+        font-size: 24px;
+        margin-bottom: 40px;
     }
 
-    .subtitle {
-        font-size: 14px;
-        margin-bottom: 15px;
+    .register-modal .subtitle-register {
+        font-size: 12px;
+        margin-bottom: 10px;
+        color: #858585;
+        font-weight: 200;
     }
 
-    .form-row {
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .form-input,
-    .first-name-input,
-    .last-name-input {
+    .form input[type="email"],
+    .form input[type="password"] {
+        height: 36px;
         width: 100%;
     }
 
-    .remember-text {
-        font-size: 14px;
+    .form input[type="text"]{
+        height: 30px;
+        border-radius: 6px;
     }
 
-    .submit-btn {
+    .form input[type="tel"],
+    .form input[type="date"]{
+        height: 30px;
+        border-radius: 6px;
+    }
+
+
+    .label-register {
+        font-size: 10px;
+        margin-bottom: 1px;
+        margin-top: 10px;
+        color: rgba(24, 23, 26, 1)
+    }
+
+    .form-register{
+        width: 300px;
+        margin-bottom: 10px;
+    }
+
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 20px;
+        margin-top: 2px;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: 0.4s;
+        border-radius: 20px;
+    }
+
+    .slider::before {
+        position: absolute;
+        content: "";
+        height: 14px;
+        width: 14px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        border: 1px solid #bdbaba;
+        transition: 0.4s;
+        border-radius: 50%;
+    }
+
+    .switch input:checked + .slider {
+        background-color: #ff2d2d;
+    }
+
+    .switch input:checked + .slider::before {
+        transform: translateX(20px);
+    }
+
+    .remember-register .remember-text {
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .submit-btn-register {
         font-size: 14px;
         padding: 10px;
+        font-weight: 100;
+        margin-top: 50px;
     }
 
-    .login-link {
-        font-size: 13px;
+    .register-link {
+        font-size: 14px;
     }
+
+    .slider{
+        background-color: white;
+        border: 1px solid #ccc;
+    }
+
+
 }
 
-@media (max-width: 480px) {
-    .register-modal {
-        max-width: 95%;
-        padding: 20px 16px;
-    }
 
-    .title {
-        font-size: 28px;
-    }
-
-    .subtitle {
-        font-size: 13px;
-    }
-
-    .remember-text {
-        font-size: 13px;
-    }
-
-    .submit-btn {
-        font-size: 13px;
-    }
-}
 
