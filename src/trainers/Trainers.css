@@ -1,12 +1,11 @@
 .inbox-container {
   width: 956px;
   height: 520px;
-  border: 1px solid #ddd;
   
-  background-color: black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   padding: 0;
   overflow: hidden;
+  
 }
 
 .inbox-title{

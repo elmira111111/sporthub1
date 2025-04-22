@@ -11,10 +11,10 @@ import { NavLink } from 'react-router-dom';
 const Aside = () => {
     const menuItems = [
         { name: 'Главный', icon: glavnyi, path: '/' },
-        { name: 'Входящие', icon: vhodyshie, path: '/admin/ads' },
-        { name: 'Опубликованные', icon: opublicovannye, path: '/admin/payment' },
+        { name: 'Входящие', icon: vhodyshie, path: '/admin/Inbox' },
+        { name: 'Опубликованные', icon: opublicovannye, path: '/admin/Post' },
         { name: 'Пользователь', icon: polzovateli, path: '/' },
-        { name: 'Тренеры', icon: trener, path: '/admin/trenery' },
+        { name: 'Тренеры', icon: trener, path: '/admin/Trenery' },
         { name: 'Профиль', icon: profile, path: '/admin/profile' }
 
     ];

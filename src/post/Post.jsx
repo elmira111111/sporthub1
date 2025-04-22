@@ -1,13 +1,13 @@
-import React from 'react'
-import './Post.css'
-import Aksana from '../../assets/profile/Aksana.png'
-import Melnikova from '../../assets/profile/melnikova.png';
-import Antonov from '../../assets/profile/Antonov.png';
 
-import Lebedeva from '../../assets/profile/lebedeva.png';
-import SergeevaMarina from '../../assets/profile/SergeevaMarina.png';
-import Sof from '../../assets/profile/sof.png';
-import Albert from '../../assets/profile/Albert.png';
+import './Post.css'
+import Aksana from '../assets/profile/Aksana.png'
+import Melnikova from '../assets/profile/melnikova.png';
+import Antonov from '../assets/profile/Antonov.png';
+
+import Lebedeva from '../assets/profile/lebedeva.png';
+import SergeevaMarina from '../assets/profile/SergeevaMarina.png';
+import Sof from '../assets/profile/sof.png';
+import Albert from '../assets/profile/Albert.png';
 
 const persons = [
     { name: 'Аксана Ким', image: Aksana, comment: 'Баскетбол - это удивительный спорт, который...', date: 'Вт 17 Июнь, 12:00' },
