@@ -14,7 +14,7 @@ const ReclamaCards = () => {
             features: ['Тренажёрный зал', 'Тренажёрный зал', 'Тренажёрный зал'],
             address: 'г. Бишкек, м. Горького, д. 84',
             social: 'Мы в Instagram',
-            image: 'https://s3-alpha-sig.figma.com/img/04f8/7885/33cfe88c6aeff5201578e141512f3684?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ZPXdw-EsNUReP0JBN~TwzcGqOnGcVf4vNAaF9yexFOEDLInUehDj-T9spYYzvT9erDtCx~1RD2CCa4wr66MqpfLGlY0rpNtjFB0-b2veKY~lQroMGTeJJ9--cM1ttGpqL0C0aIGOAnclwPFpebdUS3JuVO6BwoXG~02Nh6go1yY~kPCdY6LKJknkOEZKN5adWgWvHVopYp6U4SzVO~8-FnG6ycRfxyOqWLTwUaGJPYqUdykcstYwbbWJ0VPCeuDrc-mNxeCQetzJdMDVBb7hyW8QGg7AVCczce~Yoj9SvQEHfhr3SQFX~G92PC2mTo6iEwD5ExtvqDnlDZE6mLv42g__' // замени на актуальный путь
+            image: 'https://s3-alpha-sig.figma.com/img/04f8/7885/33cfe88c6aeff5201578e141512f3684?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=HCKwb9zOKhNZ3LnlG244twQFBn-y9TEOQITi4ROdMjxuSkgsRdoaFNWb7RhcfEzAtuk~zGiLkdtVwRwj6x-wrhh5m3UxAeQRtTf2obG7ubnATjjbWEyqGMiO93VJYfUf94s2v5V0wOZSJrTSaiu4kUU-KK4-i8Zvm2zf~PtFEJ3PYfKNxFWumaiq1haz1BslrO80Uk~cnx4jtJNYqrtUzEXLcB7Fl1awq3w-DBz8lQZeKvTXIQnEy7BVFcF63Z7hD4EgL2lhToL5U37L1Tt7KJf6O3f9d8JoQnYbfpEFesPDLbd6Nxp8s0DxIJQ15eNGKQNRweH0Zz8FPT9TmOOd0g__'
         },
         {
             id: 2,
@@ -25,7 +25,7 @@ const ReclamaCards = () => {
             features: ['Фитнес-зона', 'Кардио-зона', 'Персональные тренировки'],
             address: 'г. Бишкек, ул. Спортивная, д. 10',
             social: 'Мы в TikTok',
-            image: 'https://s3-alpha-sig.figma.com/img/04f8/7885/33cfe88c6aeff5201578e141512f3684?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ZPXdw-EsNUReP0JBN~TwzcGqOnGcVf4vNAaF9yexFOEDLInUehDj-T9spYYzvT9erDtCx~1RD2CCa4wr66MqpfLGlY0rpNtjFB0-b2veKY~lQroMGTeJJ9--cM1ttGpqL0C0aIGOAnclwPFpebdUS3JuVO6BwoXG~02Nh6go1yY~kPCdY6LKJknkOEZKN5adWgWvHVopYp6U4SzVO~8-FnG6ycRfxyOqWLTwUaGJPYqUdykcstYwbbWJ0VPCeuDrc-mNxeCQetzJdMDVBb7hyW8QGg7AVCczce~Yoj9SvQEHfhr3SQFX~G92PC2mTo6iEwD5ExtvqDnlDZE6mLv42g__'
+            image: 'https://s3-alpha-sig.figma.com/img/04f8/7885/33cfe88c6aeff5201578e141512f3684?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=HCKwb9zOKhNZ3LnlG244twQFBn-y9TEOQITi4ROdMjxuSkgsRdoaFNWb7RhcfEzAtuk~zGiLkdtVwRwj6x-wrhh5m3UxAeQRtTf2obG7ubnATjjbWEyqGMiO93VJYfUf94s2v5V0wOZSJrTSaiu4kUU-KK4-i8Zvm2zf~PtFEJ3PYfKNxFWumaiq1haz1BslrO80Uk~cnx4jtJNYqrtUzEXLcB7Fl1awq3w-DBz8lQZeKvTXIQnEy7BVFcF63Z7hD4EgL2lhToL5U37L1Tt7KJf6O3f9d8JoQnYbfpEFesPDLbd6Nxp8s0DxIJQ15eNGKQNRweH0Zz8FPT9TmOOd0g__'
         },
         {
             id: 2,
@@ -36,7 +36,7 @@ const ReclamaCards = () => {
             features: ['Фитнес-зона', 'Кардио-зона', 'Персональные тренировки'],
             address: 'г. Бишкек, ул. Спортивная, д. 10',
             social: 'Мы в TikTok',
-            image: 'https://s3-alpha-sig.figma.com/img/04f8/7885/33cfe88c6aeff5201578e141512f3684?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ZPXdw-EsNUReP0JBN~TwzcGqOnGcVf4vNAaF9yexFOEDLInUehDj-T9spYYzvT9erDtCx~1RD2CCa4wr66MqpfLGlY0rpNtjFB0-b2veKY~lQroMGTeJJ9--cM1ttGpqL0C0aIGOAnclwPFpebdUS3JuVO6BwoXG~02Nh6go1yY~kPCdY6LKJknkOEZKN5adWgWvHVopYp6U4SzVO~8-FnG6ycRfxyOqWLTwUaGJPYqUdykcstYwbbWJ0VPCeuDrc-mNxeCQetzJdMDVBb7hyW8QGg7AVCczce~Yoj9SvQEHfhr3SQFX~G92PC2mTo6iEwD5ExtvqDnlDZE6mLv42g__'
+            image: 'https://s3-alpha-sig.figma.com/img/04f8/7885/33cfe88c6aeff5201578e141512f3684?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=HCKwb9zOKhNZ3LnlG244twQFBn-y9TEOQITi4ROdMjxuSkgsRdoaFNWb7RhcfEzAtuk~zGiLkdtVwRwj6x-wrhh5m3UxAeQRtTf2obG7ubnATjjbWEyqGMiO93VJYfUf94s2v5V0wOZSJrTSaiu4kUU-KK4-i8Zvm2zf~PtFEJ3PYfKNxFWumaiq1haz1BslrO80Uk~cnx4jtJNYqrtUzEXLcB7Fl1awq3w-DBz8lQZeKvTXIQnEy7BVFcF63Z7hD4EgL2lhToL5U37L1Tt7KJf6O3f9d8JoQnYbfpEFesPDLbd6Nxp8s0DxIJQ15eNGKQNRweH0Zz8FPT9TmOOd0g__'
         },
         {
             id: 2,
@@ -47,7 +47,51 @@ const ReclamaCards = () => {
             features: ['Фитнес-зона', 'Кардио-зона', 'Персональные тренировки'],
             address: 'г. Бишкек, ул. Спортивная, д. 10',
             social: 'Мы в TikTok',
-            image: 'https://s3-alpha-sig.figma.com/img/04f8/7885/33cfe88c6aeff5201578e141512f3684?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ZPXdw-EsNUReP0JBN~TwzcGqOnGcVf4vNAaF9yexFOEDLInUehDj-T9spYYzvT9erDtCx~1RD2CCa4wr66MqpfLGlY0rpNtjFB0-b2veKY~lQroMGTeJJ9--cM1ttGpqL0C0aIGOAnclwPFpebdUS3JuVO6BwoXG~02Nh6go1yY~kPCdY6LKJknkOEZKN5adWgWvHVopYp6U4SzVO~8-FnG6ycRfxyOqWLTwUaGJPYqUdykcstYwbbWJ0VPCeuDrc-mNxeCQetzJdMDVBb7hyW8QGg7AVCczce~Yoj9SvQEHfhr3SQFX~G92PC2mTo6iEwD5ExtvqDnlDZE6mLv42g__'
+            image: 'https://s3-alpha-sig.figma.com/img/04f8/7885/33cfe88c6aeff5201578e141512f3684?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=HCKwb9zOKhNZ3LnlG244twQFBn-y9TEOQITi4ROdMjxuSkgsRdoaFNWb7RhcfEzAtuk~zGiLkdtVwRwj6x-wrhh5m3UxAeQRtTf2obG7ubnATjjbWEyqGMiO93VJYfUf94s2v5V0wOZSJrTSaiu4kUU-KK4-i8Zvm2zf~PtFEJ3PYfKNxFWumaiq1haz1BslrO80Uk~cnx4jtJNYqrtUzEXLcB7Fl1awq3w-DBz8lQZeKvTXIQnEy7BVFcF63Z7hD4EgL2lhToL5U37L1Tt7KJf6O3f9d8JoQnYbfpEFesPDLbd6Nxp8s0DxIJQ15eNGKQNRweH0Zz8FPT9TmOOd0g__'
+        },
+        {
+            id: 2,
+            titleTop: 'ТРЕНИРУЕМСЯ',
+            titleBottom: 'ПО-СЕРЬЁЗНОМУ',
+            phone: '+996 500-11-22-33',
+            buttonText: 'Рассрочка 3/6/9 месяцев',
+            features: ['Фитнес-зона', 'Кардио-зона', 'Персональные тренировки'],
+            address: 'г. Бишкек, ул. Спортивная, д. 10',
+            social: 'Мы в TikTok',
+            image: 'https://s3-alpha-sig.figma.com/img/04f8/7885/33cfe88c6aeff5201578e141512f3684?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=HCKwb9zOKhNZ3LnlG244twQFBn-y9TEOQITi4ROdMjxuSkgsRdoaFNWb7RhcfEzAtuk~zGiLkdtVwRwj6x-wrhh5m3UxAeQRtTf2obG7ubnATjjbWEyqGMiO93VJYfUf94s2v5V0wOZSJrTSaiu4kUU-KK4-i8Zvm2zf~PtFEJ3PYfKNxFWumaiq1haz1BslrO80Uk~cnx4jtJNYqrtUzEXLcB7Fl1awq3w-DBz8lQZeKvTXIQnEy7BVFcF63Z7hD4EgL2lhToL5U37L1Tt7KJf6O3f9d8JoQnYbfpEFesPDLbd6Nxp8s0DxIJQ15eNGKQNRweH0Zz8FPT9TmOOd0g__'
+        },
+        {
+            id: 2,
+            titleTop: 'ТРЕНИРУЕМСЯ',
+            titleBottom: 'ПО-СЕРЬЁЗНОМУ',
+            phone: '+996 500-11-22-33',
+            buttonText: 'Рассрочка 3/6/9 месяцев',
+            features: ['Фитнес-зона', 'Кардио-зона', 'Персональные тренировки'],
+            address: 'г. Бишкек, ул. Спортивная, д. 10',
+            social: 'Мы в TikTok',
+            image: 'https://s3-alpha-sig.figma.com/img/04f8/7885/33cfe88c6aeff5201578e141512f3684?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=HCKwb9zOKhNZ3LnlG244twQFBn-y9TEOQITi4ROdMjxuSkgsRdoaFNWb7RhcfEzAtuk~zGiLkdtVwRwj6x-wrhh5m3UxAeQRtTf2obG7ubnATjjbWEyqGMiO93VJYfUf94s2v5V0wOZSJrTSaiu4kUU-KK4-i8Zvm2zf~PtFEJ3PYfKNxFWumaiq1haz1BslrO80Uk~cnx4jtJNYqrtUzEXLcB7Fl1awq3w-DBz8lQZeKvTXIQnEy7BVFcF63Z7hD4EgL2lhToL5U37L1Tt7KJf6O3f9d8JoQnYbfpEFesPDLbd6Nxp8s0DxIJQ15eNGKQNRweH0Zz8FPT9TmOOd0g__'
+        },
+        {
+            id: 2,
+            titleTop: 'ТРЕНИРУЕМСЯ',
+            titleBottom: 'ПО-СЕРЬЁЗНОМУ',
+            phone: '+996 500-11-22-33',
+            buttonText: 'Рассрочка 3/6/9 месяцев',
+            features: ['Фитнес-зона', 'Кардио-зона', 'Персональные тренировки'],
+            address: 'г. Бишкек, ул. Спортивная, д. 10',
+            social: 'Мы в TikTok',
+            image: 'https://s3-alpha-sig.figma.com/img/04f8/7885/33cfe88c6aeff5201578e141512f3684?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=HCKwb9zOKhNZ3LnlG244twQFBn-y9TEOQITi4ROdMjxuSkgsRdoaFNWb7RhcfEzAtuk~zGiLkdtVwRwj6x-wrhh5m3UxAeQRtTf2obG7ubnATjjbWEyqGMiO93VJYfUf94s2v5V0wOZSJrTSaiu4kUU-KK4-i8Zvm2zf~PtFEJ3PYfKNxFWumaiq1haz1BslrO80Uk~cnx4jtJNYqrtUzEXLcB7Fl1awq3w-DBz8lQZeKvTXIQnEy7BVFcF63Z7hD4EgL2lhToL5U37L1Tt7KJf6O3f9d8JoQnYbfpEFesPDLbd6Nxp8s0DxIJQ15eNGKQNRweH0Zz8FPT9TmOOd0g__'
+        },
+        {
+            id: 2,
+            titleTop: 'ТРЕНИРУЕМСЯ',
+            titleBottom: 'ПО-СЕРЬЁЗНОМУ',
+            phone: '+996 500-11-22-33',
+            buttonText: 'Рассрочка 3/6/9 месяцев',
+            features: ['Фитнес-зона', 'Кардио-зона', 'Персональные тренировки'],
+            address: 'г. Бишкек, ул. Спортивная, д. 10',
+            social: 'Мы в TikTok',
+            image: 'https://s3-alpha-sig.figma.com/img/04f8/7885/33cfe88c6aeff5201578e141512f3684?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=HCKwb9zOKhNZ3LnlG244twQFBn-y9TEOQITi4ROdMjxuSkgsRdoaFNWb7RhcfEzAtuk~zGiLkdtVwRwj6x-wrhh5m3UxAeQRtTf2obG7ubnATjjbWEyqGMiO93VJYfUf94s2v5V0wOZSJrTSaiu4kUU-KK4-i8Zvm2zf~PtFEJ3PYfKNxFWumaiq1haz1BslrO80Uk~cnx4jtJNYqrtUzEXLcB7Fl1awq3w-DBz8lQZeKvTXIQnEy7BVFcF63Z7hD4EgL2lhToL5U37L1Tt7KJf6O3f9d8JoQnYbfpEFesPDLbd6Nxp8s0DxIJQ15eNGKQNRweH0Zz8FPT9TmOOd0g__'
         }
     ];
 

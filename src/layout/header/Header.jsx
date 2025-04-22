@@ -17,7 +17,7 @@ const Header = () => {
         <Link style={{ color: "red", borderBottom: '1px solid red' }} to="/">
           Главная
         </Link>
-        <Link style={{ marginLeft: "27px" }} to="/sport">
+        <Link style={{ marginLeft: "27px" }} to="/basketbol">
           Спорт
         </Link>
         <Link style={{ marginLeft: "30px" }} to="/reklama">

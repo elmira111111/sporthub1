@@ -1,4 +1,3 @@
-
 import './imregister.css';
 import {Link, useNavigate} from 'react-router-dom';
 
@@ -9,6 +8,7 @@ const ImportReg = () => {
     return (
         <div className="import-reg-container">
             <div className="import-reg-modal">
+                <Link to={'/'} className="close-btnImReg">×</Link>
                 <Link to={'/'} className="import-reg-icon">
                     <svg
                         className="icon-cross"
@@ -24,7 +24,7 @@ const ImportReg = () => {
                 </p>
                 <div className="import-reg-buttons">
                     <button className="import-reg-button"  onClick={() => navigate("/register" )}>Регистрация</button>
-                    <button className="import-reg-button" onClick={() => navigate('/login')}>Войти</button>
+                    <button className="import-log-button" onClick={() => navigate('/login')}>Войти</button>
                 </div>
             </div>
         </div>

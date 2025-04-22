@@ -1,20 +1,30 @@
-.pinCode{
-    background-image: url("https://s3-alpha-sig.figma.com/img/f4dd/2351/49eaf451a1b5b047d5848fccce00e42c?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Bpae0-vxHOSRFCyTMk4QBpO1Q~a5VH1rEXGfoIoCTXmcTSuMAUnRhOC3ttVXzljOiVv9puZGP5rA5NZZm9nmULzjuaRZy5OKi4Odj9PdZfcgijlMyTMw-DnjVH9NhM1ACauvFUxW5JFIpHiF-ka4XAc3dXXUoIpv2BqNyuFxcdR5cOSNyFmXMi0hlkDq6nxaPTJszgLBafxBNmWhtIPvBIhd9X~OEwoVYqpo-BW-enuQnoYkcg9z1nwFOfnpxdBxvGMtndj-phHW3gcdaPklAJMIVlocqbgjOAjovMTRr4yxokqGFzYKMpg63BKtrA--o35PuIpTLEU0RE0k6XctUA__");    background-size: cover;
+.pinCode-container {
+    background-image: url("https://s3-alpha-sig.figma.com/img/f4dd/2351/49eaf451a1b5b047d5848fccce00e42c?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ioOTfL5UNfnwntjxK11VB9wQWVfWf4dh6rzDbhvEv6vZQBJlSkJI26h9mVgg4P5FRfYZSmR8Mzwq~GBaL1Yg13zfdVK0Dg0GDwHdhkv2L4ZiDVmetAixcgnxO6-AQZi6CcDDEMIN7q7X2ZA4Rt7MvRw2OlbZr4pxwMuvHG2kxnkckoirVjGN3PxldxiVCLP~ygY52jQS~RvGkdKqd6jwHoONoiTmVorHgyKvHIxZ3uOP04I8rWXu2XT17Wa3ZViOnk1u~J3IB4E-IHno2KG7Dd1bUhS06Ogo9qb9hp-E1dAihGemmJd2Bo8GTmQG9-I1bStpcoP~pGJ2ZBumErPKFA__");    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-/* Белая модалка */
+
 .pinCode-modal {
     background-color: #ffffff;
-    padding: 80px;
-    border-radius: 10px;
-    width: 429px;
+    padding: 95px 89px 67px 82px;
+    width: 600px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
+    z-index: 1;
+}
+
+
+.close-btnPinCode{
+    display: none;
 }
 
 /* Заголовок */
@@ -24,11 +34,10 @@
     margin-bottom: 16px;
 }
 
-/* Подзаголовок */
 .pinCode-subtitle {
     font-size: 20px;
-    max-width: 350px;
-    color: #666666;
+    max-width: 500px;
+    color: rgba(134, 136, 137, 1);
     margin-bottom: 33px;
     text-align: left;
 }
@@ -59,8 +68,8 @@
 }
 
 .pinCode-input:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    border-color: #ff0026;
+    box-shadow: 0 0 8px rgba(255, 0, 38, 0.5);
 }
 
 /* Кнопки */
@@ -73,12 +82,13 @@
 
 .pinCode-button {
     flex: 1;
-    padding: 16px 0 23px;
+    padding: 12px 0 16px;
     border: none;
-    border-radius: 8px;
+    border-radius: 15px;
     font-size: 20px;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 300;
+    align-items: center;
     transition: background-color 0.3s ease;
 }
 
@@ -100,4 +110,84 @@
 
 .pinCode-button.cancel:hover {
     background-color: #d10000;
+}
+
+@media (max-width: 768px) {
+    .pinCode {
+        max-width: 100%;
+        max-height: 150%;
+        padding: 8%;
+        flex-direction: column;
+    }
+
+    .pinCode-modal {
+        width: 343px;
+        height: 455px;
+        padding: 10% 10%;
+        box-shadow: none;
+        border-radius: 5%;
+        margin: auto;
+    }
+
+    .pinCode-title {
+        font-size: 24px;
+        margin: auto auto 30px auto;
+        text-align: center;
+        align-items: center;
+        width: 220px;
+    }
+
+    .pinCode-subtitle {
+        font-size: 16px;
+        margin-bottom: 50px;
+        text-align: left;
+    }
+
+    .pinCode-inputs {
+        gap: 3%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 55px;
+    }
+
+    .pinCode-input {
+        width: 20%;
+        height: 70px;
+        font-size: 25px;
+    }
+
+    .pinCode-button {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    /* Красная кнопка */
+    .pinCode-button.confirm {
+        background-color: rgba(254, 4, 4, 1);
+        color: white;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    .pinCode-button.confirm:hover {
+        background-color: #d10000;
+    }
+
+    .pinCode-button.cancel {
+        color: rgba(254, 4, 4, 1);
+        border: 1px solid rgba(254, 4, 4, 1);
+        background: transparent;
+        border-radius: 8px;
+
+    }
+
+    .pinCode-button.cancel:hover {
+        background-color: #d10000;
+        color: white;
+    }
+
+    .close-btnPinCode{
+        background: #8eff00;
+        font-size: 100px;
+    }
 }
