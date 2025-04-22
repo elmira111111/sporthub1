@@ -8,7 +8,6 @@ import Reklama from "./reklama/Reklama.jsx";
 import Basketbol from "./pages/BasketbollSection/Basketbol.jsx";
 import GymHero from './pages/home/GymHero.jsx';
 import Layout from './layout/Layout.jsx';
-import Profile from "./adminProfile/profile/Profile.jsx";
 import LayoutAdmin from "./adminProfile/LayoutAdmin.jsx";
 import Trenery from "./adminProfile/trenery/Trenery.jsx";
 
@@ -27,7 +26,6 @@ function App() {
                     <Route path="/basketbol" element={<Basketbol />} />
                 </Route>
                 <Route path="/admin" element={<LayoutAdmin />}>
-                    {/*<Route path="profile" element={<Profile />} />*/}
                     <Route path="trenery" element={<Trenery />} />
                 </Route>
             </Routes>
