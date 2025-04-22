@@ -1,0 +1,118 @@
+.inbox-container {
+  width: 956px;
+  height: 420px;
+  border: 1px solid #ddd;
+  
+  background-color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  padding: 0;
+  overflow: hidden;
+}
+
+.inbox-title{
+    
+font-weight: 700;
+font-size: 32px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(254, 255, 255, 1);
+ font-family: Lato, sans-serif;
+
+}
+
+.inbox-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.inbox-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.inbox-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.inbox-name {
+  width: 200px; 
+  font-weight: 400;
+  font-size: 18px;
+  font-family: Lato, sans-serif;
+  color: rgba(254, 255, 255, 1);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.inbox-comment {
+  flex: 1;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.inbox-date {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: auto;
+}
+
+.inbox-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  width: 98%;
+  margin: 0 auto;
+  height: 1px;
+}
+
+
+@media (max-width: 768px) {
+  .inbox-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .inbox-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .inbox-info {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 4px;
+  }
+
+  .inbox-name,
+  .inbox-comment {
+    width: 100%;
+    white-space: normal;
+  }
+
+  .inbox-date {
+    margin-left: 0;
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  .inbox-avatar {
+    margin-bottom: 10px;
+  }
+}

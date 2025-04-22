@@ -25,6 +25,8 @@ const sports = [
 
 const Sports = () => {
   return (
+
+    
     <div className="sp-container">
       <h1 className="sp-title">Виды спорта</h1>
       <div className="sp-grid">
