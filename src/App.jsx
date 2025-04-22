@@ -11,21 +11,18 @@ import Layout from './layout/Layout.jsx';
 import LayoutAdmin from "./adminProfile/LayoutAdmin.jsx";
 import Trenery from "./adminProfile/trenery/Trenery.jsx";
 import PersonalInfo from './menu/personalinfo/PersonalInfo.jsx'
-import Inbox from './menu/inbox/Inbox.jsx';
 
 function App() {
     return (
         <BrowserRouter>
-            <Routes>
-        <BrowserRouter BrowserRouter>  
         <Routes>
-            <Route path='/' element= {<Layout/>}>
-            <Route path='/' element= {<GymHero/>}/>    
-                <Route path="/register" element={<RegisterPage />} />
-                <Route path="/login" element={<LoginPage />} />
-                <Route path="/forgot" element={<ForgotPass />} />
-                <Route path="/pincode" element={<PinCode />} />
-                <Route path="/imregister" element={<ImportReg />} />
+            <Route path="/register" element={<RegisterPage />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path='/' element= {<GymHero/>}/>
+            <Route path="/forgot" element={<ForgotPass />} />
+            <Route path="/pincode" element={<PinCode />} />
+            <Route path="/imregister" element={<ImportReg />} />
+
                 <Route path="/" element={<Layout />}>
                     <Route index element={<GymHero />} />
                     <Route path="/reklama" element={<Reklama />} />
@@ -33,11 +30,10 @@ function App() {
                 </Route>
                 <Route path="/admin" element={<LayoutAdmin />}>
                     <Route path="trenery" element={<Trenery />} />
+                    <Route path="/profile" element={<PersonalInfo />} />
                 </Route>
                 <Route path="/reklama" element={<Reklama />} />
                     <Route path="/basketbol" element={<Basketbol />} />
-                      <Route path="/personal" element={<PersonalInfo />} />
-                    </Route>
             </Routes>
         </BrowserRouter>
     );
