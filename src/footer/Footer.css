@@ -15,10 +15,12 @@
 
 
 .footer2{
+ 
 max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
   width: 100%;
+
 }
 
 
@@ -111,6 +113,8 @@ border-radius: 10px;
   
   margin: 20px 0;
   width: 100%;
+  color: rgba(255, 255, 255, 1);
+  
 }
 
 .footer-thanks {
@@ -153,6 +157,7 @@ border-radius: 10px;
   .footer-links {
     gap: 20px;
     padding: 10px;
+  
   }
 
   .footer-links a {

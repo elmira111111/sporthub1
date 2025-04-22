@@ -5,9 +5,11 @@ const Footer = () => {
     <footer className='footer'>
       <div className='footer2'>
         <div className="footer-overlay">
-        <div className="footer-top">
-          <div className="footer-logo">Logo</div>
-          <div className="footer-ads">Разместить рекламу</div>
+          <div className='container2'>
+             <div className="footer-top">
+              <div className="footer-logo">Logo</div>
+            <div className="footer-ads">Разместить рекламу</div>
+        </div>
         </div>
       </div>
 
@@ -23,7 +25,7 @@ const Footer = () => {
         <a href="https://instagram.com" target='_blank'><i className="bi bi-instagram"></i></a>
       </div>
       <div>
-        <hr className='footer-line' />
+        <hr className='footer-line'/>
         <p className="footer-thanks">Спасибо что выбираете нас!</p>
       </div>
       
