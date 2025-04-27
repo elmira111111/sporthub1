@@ -7,6 +7,7 @@ import opublicovannye from '../../assets/images/opublicovannye.svg';
 import polzovateli from '../../assets/images/polzovatel.svg';
 import trener from '../../assets/images/trenery.svg';
 import { NavLink } from 'react-router-dom';
+import HomeIcon from '../../assets/images/Home.svg'
 
 const Aside = () => {
     const menuItems = [
@@ -24,15 +25,16 @@ const Aside = () => {
             <aside className="sidebar">
                 <nav className="menu">
                     <ul>
+                        <img src={HomeIcon} alt="" className={'homeIcon'}/>
                         {menuItems.map(item => (
                             <li key={item.name}>
                                 <NavLink
                                     to={item.path}
-                                    className={({ isActive }) =>
+                                    className={({isActive}) =>
                                         `menu-item ${isActive ? 'active' : ''}`
                                     }
                                 >
-                                    <img src={item.icon} alt="" className="menu-icon" />
+                                    <img src={item.icon} alt="" className="menu-icon"/>
                                     {item.name}
                                 </NavLink>
                             </li>
