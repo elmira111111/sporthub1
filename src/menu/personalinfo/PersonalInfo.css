@@ -222,6 +222,69 @@ label::after {
 }
 
 
+.AdminProfile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: white;
+    padding: 45px 0 38px 0;
+
+}
+
+.AdminProfile-image-wrapper {
+    position: relative;
+    width: 121px;
+    height: 121px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.admin-profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+}
+
+.camera-icon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.admin-profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: unset;
+    margin-top: 40px;
+}
+
+.admin-profile-name {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    font-family: 'Comfortaa', sans-serif;
+    color: rgba(255, 255, 255, 1);
+}
+
+.admin-profile-location {
+    font-size: 14px;
+    margin: 4px 0 0 0;
+    font-family: 'Lato', sans-serif;
+    color: rgba(254, 255, 255, 1);
+}
+
+
+
 @media (max-width: 768px) {
 
   .form-container {
