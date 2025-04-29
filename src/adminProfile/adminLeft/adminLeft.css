@@ -58,11 +58,6 @@
     transition: filter 0.3s ease;
 }
 
-/*.menu-item:hover {*/
-/*    background-color: rgba(255, 255, 255, 0.15);*/
-/*    height: 40px;*/
-/*}*/
-
 .menu-item.active {
     background-color: white;
     color: black;
@@ -92,7 +87,6 @@
     margin: 360px auto;
 }
 
-/* Мобильная адаптация */
 @media (max-width: 1024px) {
     .app-container {
         flex-direction: column;
